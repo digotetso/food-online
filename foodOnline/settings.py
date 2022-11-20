@@ -139,6 +139,10 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     BASE_DIR / 'static',
 ]
+
+# FOR file/imgaes uploads:
+MEDIA_ROOT = BASE_DIR / 'media' #>> Creates abs path to 'users' folder > #1
+MEDIA_URL = '/media/'  # >> url to access my uploads > #2
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
